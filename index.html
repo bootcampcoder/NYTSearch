@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Yourk Time Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="assets/css/style.css">
+ <!--   <link rel="stylesheet" href="assets/css/reset.css">-->
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<body>
+
+        <div class="container">
+                <div class="jumbotron bg-info text-light display-4 text-center">
+                  New York Times Search
+                </div>
+                <div class="card ">
+                  <div class="card-header bg-dark text-light">
+                    Search Parameters
+                  </div>
+                  <form class="p-4">
+                    <div class="form-group">
+                      <label for="searchTerm">Search Term:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="searchTerm"
+                        aria-describedby="emailHelp"
+                        placeholder="Your search term here.."
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="noOfRecords">Number of Records</label>
+                      <input type="number" class="form-control" id="noOfRecords" />
+                    </div>
+           
+                    <div class="form-group">
+                      <label for="StartYear">Start Year</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="startYear"
+                        placeholder="yyyymmdd"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="endYear">End Year</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="endYear"
+                        placeholder="yyyymmdd"
+                      />
+                    </div>
+                    <button type="submit" id="search" class="btn btn-primary">
+                      <i class="far fa-newspaper"></i>Search
+                    </button>
+                    <button type="submit" id="clear" class="btn btn-danger">clear</button>
+                  </form>
+                </div>
+           
+                <div class="pt-4 pb-4">
+                  <div class="card ">
+                    <div class="card-header bg-dark text-light">
+                      Top Articles
+                    </div>
+                    <div class="card-body h6">
+                      tej prasad
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+</body>
+
+<script src="assets/javascript/app.js"></script>
+
+</html>
